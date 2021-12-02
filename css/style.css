@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'),
+    url('../fonts/lato-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'),
+    url('../fonts/lato-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'),
+    url('../fonts/lato-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.header_active {
+    background: white;
+}
+
+.header__wrapper {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #828282;
+}
+
+.header__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header__nav-link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+    text-decoration: none;
+}
+
+.header__nav-link:hover, .header__link:focus, .header__link:active {
+    color: #828282;
+}
+
+.intro__title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    display: inline-block;
+    max-width: 204px;
+    margin-bottom: 40px;
+}
+
+.intro {
+    min-height: 100vh;
+    background-size: cover;
+    padding-top: 122px;
+    margin-bottom: 107px;
+}
+
+.intro__img {
+    width: 100%;
+    height: 381px;
+    background: #959698;
+}
+
+.about {
+    height: 506px;
+    background: #F6F6F6;
+}
+
+.about__title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 18px;
+}
+
+.about__info {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    max-width: 440px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.footer {
+    height: 522px;
+}
+
+.footer__title {
+    padding-top: 115px;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact__welcome {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.send__message-link {
+     padding: 9px 29px;
+     background: #070707;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 22px;
+     text-decoration: none;
+     border-radius: 40px;
+ }
+
+.send__message {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact__social {
+    text-align: center;
+    margin-top: 86px;
+}
+
+.contact__social-link {
+    margin-right: 62px;
+}
+
+.contact__social-link:last-child {
+    margin-right: 0;
+}
