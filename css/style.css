@@ -217,6 +217,10 @@ img {
      border-radius: 40px;
  }
 
+.send__message-link:hover, .send__message-link:focus, .send__message-link:active {
+    opacity: .75;
+}
+
 .send__message {
     text-align: center;
     margin: 0 auto;
@@ -229,6 +233,10 @@ img {
 
 .contact__social-link {
     margin-right: 62px;
+}
+
+.contact__social-link:hover, .contact__social-link:focus, .contact__social-link:active {
+    opacity: .80;
 }
 
 .contact__social-link:last-child {
