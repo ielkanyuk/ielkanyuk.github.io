@@ -7,7 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 		const scrollTarget = document.getElementById(href);
 
 		window.scrollBy({
-			top: scrollTarget.getBoundingClientRect().top,
+			top: scrollTarget.getBoundingClientRect().top - 90,
 			behavior: 'smooth'
 		});
 	});

@@ -194,16 +194,58 @@ img {
     line-height: 22px;
     text-align: center;
     max-width: 440px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
 }
 
-.skills {
-    height: 506px;
+.skills__title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 18px;
+}
+
+.skills__list {
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+.skills__info {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.skills__collect {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 90px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.skill__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill__card-thumb {
+    margin: 0 auto 25px;
+}
+
+.skill__card-desc {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
 }
 
 .projects {
-    height: 506px;
+    height: 5px;
     background: #F6F6F6;
 }
 
